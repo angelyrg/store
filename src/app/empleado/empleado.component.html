@@ -1,0 +1,27 @@
+
+
+
+<p><b>Employe 1</b></p>
+
+<p >Name: {{name}}</p>
+
+<p >Lastname: {{lastname}}</p>
+
+<!-- <div>
+    <input type="number" #inputage (keyup)="0" placeholder="Age...">
+</div> -->
+
+<p >Age: {{ getAge() }}</p>
+
+<p >Status: {{ getAge()<18 ? "Not adult" : "Adult" }}</p>
+
+<p>Company: {{ inputcompany.value }}</p>
+
+<div>
+    <input type="text" #inputcompany (keyup)="changeCompany(inputcompany.value)" placeholder="Company's name">
+
+    <!-- <button type="button" (keyup)="changeCompany(inputcompany.value)">Send</button> -->
+</div>
+
+
+<input type="text" [(ngModel)]="lastname" placeholder="Lastname">
